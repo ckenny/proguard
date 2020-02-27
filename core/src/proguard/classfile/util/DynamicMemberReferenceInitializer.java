@@ -511,7 +511,7 @@ implements   AttributeVisitor,
 
     public void visitProgramField(ProgramClass programClass, ProgramField programField)
     {
-        if (notePrinter.accepts(programClass.getName()))
+        if (notePrinter.accepts(programClass.getName()) && (DEBUG))
         {
             System.out.println("      Maybe this is program field '" +
                                ClassUtil.externalFullClassDescription(0, programClass.getName()) +
@@ -524,7 +524,7 @@ implements   AttributeVisitor,
 
     public void visitProgramMethod(ProgramClass programClass, ProgramMethod programMethod)
     {
-        if (notePrinter.accepts(programClass.getName()))
+        if (notePrinter.accepts(programClass.getName()) && (DEBUG))
         {
             System.out.println("      Maybe this is program method '" +
                                ClassUtil.externalFullClassDescription(0, programClass.getName()) +
@@ -537,7 +537,7 @@ implements   AttributeVisitor,
 
     public void visitLibraryField(LibraryClass libraryClass, LibraryField libraryField)
     {
-        if (notePrinter.accepts(libraryClass.getName()))
+        if (notePrinter.accepts(libraryClass.getName()) && (DEBUG))
         {
             System.out.println("      Maybe this is library field '" +
                                ClassUtil.externalFullClassDescription(0, libraryClass.getName()) +
@@ -550,7 +550,7 @@ implements   AttributeVisitor,
 
     public void visitLibraryMethod(LibraryClass libraryClass, LibraryMethod libraryMethod)
     {
-        if (notePrinter.accepts(libraryClass.getName()))
+        if (notePrinter.accepts(libraryClass.getName()) && (DEBUG))
         {
             System.out.println("      Maybe this is library method '" +
                                ClassUtil.externalFullClassDescription(0, libraryClass.getName()) +
